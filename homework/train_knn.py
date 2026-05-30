@@ -18,7 +18,7 @@ df = pd.read_csv(url, sep=";")
 # preparacion de datos
 y = df["quality"]
 x = df.copy()
-x.pop("quality")
+x.pop("quality"_)
 
 # dividir los datos en entrenamiento y testing
 x_train, x_test, y_train, y_test = train_test_split(
